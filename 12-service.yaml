@@ -11,8 +11,8 @@ spec:
     environment: dev
   ports:
     - protocol: TCP
-      port: 8080 # service port
-      targetPort: 80 # container port
+      port: 8080  # service port
+      targetPort: 80  # container port
 ---
 apiVersion: v1
 kind: Pod
