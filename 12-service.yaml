@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     project: roboshop
-    purpose: service -demo
+    purpose: service-demo
     environment: dev
   ports:
     - protocol: TCP
@@ -21,7 +21,7 @@ metadata:
   name: nginx
   labels:
     project: roboshop
-    purpose: service -demo
+    purpose: service-demo
     environment: dev
 spec:
   containers:
