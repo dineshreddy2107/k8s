@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: nginx
   labels:
-    
     purpose: service-demo
 spec:
   selector:
@@ -25,6 +24,6 @@ metadata:
     environment: dev
 spec:
   containers:
-    name: nginx
+  - name: nginx
     image: nginx
 
