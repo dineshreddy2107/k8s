@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata: 
-  name: pod-ConfigMap
+  name: Pod-ConfigMap
   labels:
     purpose: ConfigMap
     env: dev
