@@ -8,7 +8,7 @@ metadat:
     type: NodePort 
     selector: 
       project: roboshop
-      purpose: service-demo
+      purpose: service-np-demo
       environment: dev
     ports: 
      - protocal: TCP  
@@ -22,7 +22,7 @@ metadata:
   name: nginx
   labels:
     project: roboshop
-    purpose: service-demo
+    purpose: service-np-demo
     environment: dev
 spec:
   containers:
