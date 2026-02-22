@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nginx-np-rs 
+  labels:
+   purpose: service-np-rs
+spec:
+    type: NodePort 
+    selector: 
+      labels:
+        purpose: rs-demo
+        project: roboshop
+        app: nginx
+    ports: 
+     - protocol: TCP  
+       port: 80
+       targetPort: 80
