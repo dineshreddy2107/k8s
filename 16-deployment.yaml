@@ -23,6 +23,6 @@ spec:
         project: roboshop
         app: nginx 
     spec:
-      containedeployment:
+      containers:
       - name: nginx
         image: nginx:stable-perl
