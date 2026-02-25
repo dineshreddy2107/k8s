@@ -29,3 +29,20 @@ spec:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-dynamic
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: ebs-dynamic
+  labels: 
+     purpose: ebs-dynamic-ebs-demo
+     project: roboshop
+spec:
+  type: LoadBalancer
+  selector:
+     purpose: ebs-dynamic-ebs-demo
+     project: roboshop
+  ports:
+  - protocol: TCP
+    port: 80
+    targetport: 80
